@@ -1,0 +1,122 @@
+.conteo{
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.9s;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.logofep_conteo{
+    background: url('../../assets/img/generales/logofep.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 90px;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+#demo{
+    font-size: 100px;
+	font-family: 'TitlingGothicFBWide-Bold';
+}
+
+#demo > div{
+    display: flex;
+    justify-content: center;
+
+}
+
+#demo div div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 35px;
+}
+
+#demo p{
+    font-size: 12px;
+    margin-top: -10px;
+    color: #fda302;
+    text-transform: uppercase;
+}
+
+#demo span{
+    display: inline-block;
+    color: #fda302;
+    margin: 0 15px;
+}
+
+.tiempos {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 80px;
+}
+
+.contenedor div{
+    margin: 50px 25px;
+    padding: 15px 25px;
+    background: #fda302;
+    color: #2c267b;
+    cursor: pointer;
+    width: 25%;
+    font-size: 13px;
+    -webkit-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+	font-family: 'TitlingGothicFBWide-Bold';
+}
+
+.contenedor_form{
+    position: absolute;
+    width: 100%;
+    transform: translate(0px, -60%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.content_colombia{
+    font-family: 'TitlingGothicFBWide-Bold';
+    font-size: 13px;
+}
+
+
+.fadeOut{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fadeIn_form{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+@media only screen and (max-width: 1300px){
+    .logofep_conteo{
+        width: 225px;
+        height: 70px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    #demo {
+        font-size: 70px;
+    }
+
+    .contenedor {
+        margin-top: 45px;
+    }
+}

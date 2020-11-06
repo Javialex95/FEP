@@ -1,0 +1,148 @@
+/* FORMULARIO */
+.formulario{
+    margin: 35px 0;
+    position: relative;
+}
+
+.form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+.form div label{
+    font-size: 15px;
+    width: 85%;
+    display: inline-block;
+    padding-top: 25px;  
+    padding-bottom: 15px;
+    color: white;
+    font-family: 'TitlingGothicFBWide-Bold';
+}
+
+input[type="text"] {
+    background: white;
+    border: none;
+    border-radius: 14px;
+    color: #2c267b;
+    width: 53%;
+    text-align: center;
+    padding: 2px;
+}
+
+select{
+    background: white;
+    border: none;
+    border-radius: 14px;
+    color: #2c267b;
+    width: 53%;
+    text-align: center;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+option{
+    color: #2c267b;
+    cursor: pointer;
+
+}
+
+input[type="submit"]{
+    background: #fda302;
+    border: none;
+    padding: 10px 15px;
+    margin: 25px;
+    cursor: pointer;
+    color:  #2c267b;
+    font-family: 'TitlingGothicFBWide-Bold';
+}
+
+
+.acceder_tienda{
+    margin: 0px 0px;
+    padding: 10px 25px;
+    background: #2c267b;
+    color: #fda302;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    display: inline-block;
+    
+}
+
+.success_form{
+    color:  #2c267b;
+    width: 25%;
+    max-width: 500px;
+    background: #fda302;
+    margin: 0px auto;
+    -webkit-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    padding: 25px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.failed_form{
+    color:  #2c267b;
+    width: 25%;
+    max-width: 500px;
+    background: #fda302;
+    margin: 0px auto;
+    -webkit-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -9px rgba(0,0,0,0.75);
+    padding: 25px 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.failed_form  img{
+    display: block;
+    margin: 0px auto;
+    width: 15%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.success_form  img{
+    display: block;
+    margin: 0px auto;
+    width: 13%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.failed_form  p{
+    border-radius: 14px;
+    background: white;
+    color: #2c267b;
+    margin-bottom: 20px;
+}
+
+.success_form  p{
+    border-radius: 14px;
+    background: white;
+    color: #2c267b;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 4px;
+    display: block;
+    width: 85%;
+}
+
+@media only screen and (max-width: 1300px){
+
+}

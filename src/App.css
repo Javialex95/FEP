@@ -1,38 +1,511 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  background: url('./assets/img/generales/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* FONTS */
+
+@font-face {
+	font-family: 'TitlingGothicFBNor-Bold';
+	src: url('./assets/fonts/TitlingGothicFBNor-Bold.eot');
+	src: local('☺'), url('./assets/fonts/TitlingGothicFBNor-Bold.eot') format('woff'), url('./assets/fonts/TitlingGothicFBNor-Bold.eot') format('truetype'), url('./assets/fonts/TitlingGothicFBNor-Bold.eot') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TitlingGothicFBNor-Stand';
+	src: url('./assets/fonts/TitlingGothicFBNor-Stand.eot');
+	src: local('☺'), url('./assets/fonts/TitlingGothicFBNor-Stand.woff') format('woff'), url('./assets/fonts/TitlingGothicFBNor-Stand.ttf') format('truetype'), url('./assets/fonts/TitlingGothicFBNor-Stand.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TitlingGothicFBWide-Bold';
+	src: url('./assets/fonts/TitlingGothicFBWide-Bold.eot');
+	src: local('☺'), url('./assets/fonts/TitlingGothicFBWide-Bold.woff') format('woff'), url('./assets/fonts/TitlingGothicFBWide-Bold.ttf') format('truetype'), url('./assets/fonts/TitlingGothicFBWide-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TitlingGothicFBWide-Med';
+	src: url('./assets/fonts/TitlingGothicFBWide-Med.eot');
+	src: local('☺'), url('./assets/fonts/TitlingGothicFBWide-Med.woff') format('woff'), url('./assets/fonts/TitlingGothicFBWide-Med.ttf') format('truetype'), url('./assets/fonts/TitlingGothicFBWide-Med.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TitlingGothicFBWide-Reg';
+	src: url('./assets/fonts/TitlingGothicFBWide-Reg.eot');
+	src: local('☺'), url('./assets/fonts/TitlingGothicFBWide-Reg.woff') format('woff'), url('./assets/fonts/TitlingGothicFBWide-Reg.ttf') format('truetype'), url('./assets/fonts/TitlingGothicFBWide-Reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* CARITAS ANIMACIONES */
+.carita{
+  position: absolute;
+}
+.carita_amarilla{
+  height: 367px;
+  width: calc(10000px / 25);          
+  background: url('./assets/img/generales/amarillo.png'); 
+  animation: carita_amarilla 7s steps(25) infinite;
+  top: -10%;
+  right: 79%;
+  transform: rotate(-30deg);
+}
+
+@keyframes carita_amarilla {
+  0% {background-position: 0;
+    transform:  translate(0px, 0px)  rotate(-20deg) scale(0.9) perspective(550px) translateZ(0vw);
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    transform:  translate(30px, 0px) rotate(-30deg)  scale(0.9) perspective(500px) translateZ(0.5vw);
   }
+  20% {
+    transform:  translate(20px,-47px)  rotate(-32deg) scale(0.9) perspective(500px) translateZ(0.5vw);
+  }
+  30% {
+    transform:  translate(-10px,-42px)  rotate(-33deg) scale(0.9) perspective(500px) translateZ(0.5vw);
+  }
+  40% {
+    transform:  translate(6px,-30px)  rotate(-34deg) scale(0.9) perspective(500px) translateZ(-0.1vw);
+  }
+  50% {
+    transform:  translate(15px,-18px)  rotate(-37deg) scale(0.9) perspective(500px) translateZ(-0.1vw);
+  }
+  60% {
+    transform:  translate(36px,-25px)  rotate(-34deg) scale(0.9) perspective(500px) translateZ(-0.1vw);
+  }
+  70% {
+    transform:  translate(47px,-44px)  rotate(-33deg) scale(0.9)  perspective(500px) translateZ(0.1vw);
+  }
+  80% {
+    transform:  translate(-30px,-15px)  rotate(-32deg) scale(0.9)  perspective(500px) translateZ(0.1vw);
+  }
+  90% {
+    transform:  translate(15px,-22px) rotate(-30deg)  scale(0.9) perspective(500px) translateZ(0.1vw);
+  }
+  100% {background-position: 10000px;
+    transform:  translate( 0px, 0px)  rotate(-20deg) scale(0.9) perspective(550px) translateZ(0vw);
+  }
+}
+
+
+
+.carita_amarilla_little{
+  height: 367px;
+  width: calc(10000px / 25);          
+  background: url('./assets/img/generales/amarillo.png'); 
+  animation: carita_amarilla_little 7s steps(25) infinite;
+  top: 41%;
+  right: 0%;
+  transform: rotate(-30deg);
+}
+
+@keyframes carita_amarilla_little{
+  0% {background-position: 0;
+    transform:  translate(0px, 0px)  rotate(-20deg) scale(0.2) ;
+  }
+  10% {
+    transform:  translate(31px,-24px) rotate(-20deg)  scale(0.2) ;
+  }
+  20% {
+    transform:  translate(7px,-47px)  rotate(-20deg) scale(0.2) ;
+  }
+  30% {
+    transform:  translate(13px,-30px)  rotate(-20deg) scale(0.2) ;
+  }
+  40% {
+    transform:  translate(6px,-6px)  rotate(-20deg) scale(0.2) ;
+  }
+  50% {
+    transform:  translate(35px,-18px)  rotate(-20deg) scale(0.2) ;
+  }
+  60% {
+    transform:  translate(36px,-14px)  rotate(-20deg) scale(0.2) ;
+  }
+  70% {
+    transform:  translate(47px,-44px)  rotate(-20deg) scale(0.2) ;
+  }
+  80% {
+    transform:  translate(30px,-41px)  rotate(-20deg) scale(0.2) ;
+  }
+  90% {
+    transform:  translate(29px,-22px) rotate(-20deg)  scale(0.2);
+  }
+  100% {background-position: 10000px;
+    transform:  translate( 0px, 0px)  rotate(-20deg) scale(0.2);
+  }
+}
+
+.carita_verde{
+  height: 476px;
+  width: calc(12500px / 25);          
+  background: url('./assets/img/generales/verde.png'); 
+  animation: carita_verde 7s steps(25) infinite;
+
+  right: 10%;
+  top: 55%;
+
+}
+
+@keyframes carita_verde{
+  0% {background-position: 0;
+    transform:  translate(-2px, 8px) rotate(-20deg)   scale(0.4);
+  }
+  6% {
+    transform:  translate(-23px,-14px) rotate(-20deg)   scale(0.4);
+  }
+  15% {
+    transform:  translate(-37px,4px) rotate(-20deg)   scale(0.4);
+  }
+  21% {
+    transform:  translate(-29px,22px) rotate(-20deg)   scale(0.4);
+  }
+  25% {
+    transform:  translate(-9px,9px) rotate(-20deg)   scale(0.4);
+  }
+  36% {
+    transform:  translate(-3px,-23px) rotate(-20deg)   scale(0.4);
+  }
+  44% {
+    transform:  translate(-29px,-30px) rotate(-20deg)   scale(0.4);
+  }
+  52% {
+    transform:  translate(-9px,-12px) rotate(-20deg)   scale(0.4);
+  }
+  63% {
+    transform:  translate(-28px,4px) rotate(-20deg)   scale(0.4);
+  }
+  70% {
+    transform:  translate(-41px,-29px) rotate(-20deg)   scale(0.4);
+  }
+  78% {
+    transform:  translate(-2px,-31px) rotate(-20deg)   scale(0.4);
+  }
+  88% {
+    transform:  translate(-30px, -20px) rotate(-20deg)   scale(0.4);
+  }
+  100% {background-position: 12500px; 
+    transform:  translate(-2px,8px) rotate(-20deg)   scale(0.4);
+  }
+}
+
+.carita_verde_big{
+  height: 476px;
+  width: calc(12500px / 25);          
+  background: url('./assets/img/generales/verde.png'); 
+  animation: carita_verde_big 7s steps(25) infinite;
+
+  right: 33%;
+  top: -46%;
+
+}
+
+@keyframes carita_verde_big{
+  0% {background-position: 0;
+    transform:  translate(-2px, 8px) rotate(-30deg)   scale(0.8);
+  }
+  6% {
+    transform:  translate(-23px,-14px) rotate(-30deg)   scale(0.8);
+  }
+  15% {
+    transform:  translate(-37px,4px) rotate(-30deg)   scale(0.8);
+  }
+  21% {
+    transform:  translate(-29px,22px) rotate(-30deg)   scale(0.8);
+  }
+  25% {
+    transform:  translate(-9px,9px) rotate(-30deg)   scale(0.8);
+  }
+  36% {
+    transform:  translate(-3px,-23px) rotate(-30deg)   scale(0.8);
+  }
+  44% {
+    transform:  translate(-29px,-30px) rotate(-30deg)   scale(0.8);
+  }
+  52% {
+    transform:  translate(-9px,-12px) rotate(-30deg)   scale(0.8);
+  }
+  63% {
+    transform:  translate(-28px,4px) rotate(-30deg)   scale(0.8);
+  }
+  70% {
+    transform:  translate(-41px,-29px) rotate(-30deg)   scale(0.8);
+  }
+  78% {
+    transform:  translate(-2px,-31px) rotate(-30deg)   scale(0.8);
+  }
+  88% {
+    transform:  translate(-30px, -20px) rotate(-30deg)   scale(0.8);
+  }
+  100% {background-position: 12500px; 
+    transform:  translate(-2px,8px) rotate(-30deg)   scale(0.8);
+  }
+}
+
+
+.carita_azul{
+  height: 126px;
+  width: calc(3750px / 25);          
+  background: url('./assets/img/generales/azul.png'); 
+  animation: carita_azul 7s steps(25) infinite;
+
+  top: 79%;
+  right: 64%;
+  transform: rotate(-30deg);
+
+}
+
+
+@keyframes carita_azul{
+  0% {background-position: 0;
+    transform:  translate(28px, 8px)  rotate(-30deg) scale(0.8);;
+  }
+  10% {
+    transform:  translate(63px, 12px) rotate(-30deg) scale(0.8);;
+  }
+  20% {
+    transform:  translate(46px, 28px) rotate(-30deg) scale(0.8);;
+  }
+  30% {
+    transform:  translate(7px,- 7px) rotate(-30deg) scale(0.8);;
+  }
+  40% {
+    transform:  translate(7px,- 2px) rotate(-30deg) scale(0.8);;
+  }
+
+  50% {
+    transform:  translate(64px, 30px) rotate(-30deg) scale(0.8);;
+  }
+
+  60% {
+    transform:  translate(22px, 29px) rotate(-30deg) scale(0.8);;
+  }
+  70% {
+    transform:  translate(34px, 19px) rotate(-30deg) scale(0.8);;
+  }
+  80% {
+    transform:  translate(44px, 24px) rotate(-30deg) scale(0.9);;
+  }
+  90% {
+    transform:  translate(21px, 12px) rotate(-30deg) scale(0.8);;
+  }
+  100% {background-position: 3750px;
+    transform:  translate(28px, 8px)  rotate(-30deg) scale(0.8);;
+  }
+}
+
+.carita_morado{
+  height: 551px;
+  width: calc(30000px / 50);          
+  background: url('./assets/img/generales/morado.png'); 
+  animation: carita_morado 6s steps(50) infinite;
+
+  right: -11%;
+  top: -19%;
+  /* transform: scale(0.8) rotate(40deg) !important; */
+}
+
+
+
+@keyframes carita_morado{
+  0% {background-position: 0;
+    transform:  translate(0px,0px)  rotate(45deg) scale(0.9) ;
+  }
+  10% {
+    transform:  translate(10px, 14px) rotate(45deg)  scale(0.9) ;
+  }
+  20% {
+    transform:  translate(20px, 40px)  rotate(40deg) scale(0.9) ;
+  }
+  30% {
+    transform:  translate( 0px, 40px)  rotate(35deg) scale(0.9) ;
+  }
+  40% {
+    transform:  translate( 0px, 0px)  rotate(30deg) scale(0.9) ;
+  }
+  50% {
+    transform:  translate(-15px,-18px)  rotate(25deg) scale(0.9) ;
+  }
+  60% {
+    transform:  translate(-15px,-40px)  rotate(30deg) scale(0.9) ;
+  }
+  70% {
+    transform:  translate(-25px,-25px)  rotate(35deg) scale(0.9) ;
+  }
+  80% {
+    transform:  translate(-5px, 0px)  rotate(40deg) scale(0.9) ;
+  }
+  90% {
+    transform:  translate(15px, 25px) rotate(45deg)  scale(0.9);
+  }
+  100% {background-position: 30000px;
+    transform:  translate( 0px, 0px)  rotate(45deg) scale(0.9);
+  }
+}
+
+.carita_morado_little{
+  height: 551px;
+  width: calc(30000px / 50);          
+  background: url('./assets/img/generales/morado.png'); 
+  animation: carita_morado_little 6s steps(50) infinite;
+
+  right: 75%;
+  top: 50%;
+  /* transform: scale(0.8) rotate(40deg) !important; */
+}
+
+
+
+@keyframes carita_morado_little{
+  0% {background-position: 0;
+    transform:  translate(0px,0px)  rotate(-20deg) scale(0.4) ;
+  }
+  10% {
+    transform:  translate(-31px,-24px) rotate(-20deg) scale(0.4) ;
+  }
+  20% {
+    transform:  translate(-7px,-47px)  rotate(-20deg) scale(0.4) ;
+  }
+  30% {
+    transform:  translate(13px,-30px)  rotate(-20deg) scale(0.4) ;
+  }
+  40% {
+    transform:  translate(-6px,-6px)  rotate(-20deg) scale(0.4) ;
+  }
+  50% {
+    transform:  translate(-35px,-18px)  rotate(-20deg) scale(0.4) ;
+  }
+  60% {
+    transform:  translate(-36px,-14px)  rotate(-20deg) scale(0.4) ;
+  }
+  70% {
+    transform:  translate(-47px,-44px)  rotate(-20deg) scale(0.4) ;
+  }
+  80% {
+    transform:  translate(-30px,-41px)  rotate(-20deg) scale(0.4) ;
+  }
+  90% {
+    transform:  translate(-29px,-22px) rotate(-20deg) scale(0.4);
+  }
+  100% {background-position: 30000px;
+    transform:  translate( 0px, 0px)  rotate(-20deg) scale(0.4);
+  }
+}
+
+
+.carita_roja{
+  height: 276px;
+  width: calc(15000px / 50);          
+  background: url('./assets/img/generales/rojo.png'); 
+  animation: carita_roja 7s steps(50) infinite;
+
+  /* transform: rotate(30deg) scale(0.8); */
+  top: 35%;
+  right: 70%;
+}
+
+
+@keyframes carita_roja{
+  0% {background-position: 0;
+    transform:  translate(0px,0px)  rotate(30deg) scale(0.7);;
+  }
+  10% {
+    transform:  translate(-10px, 0px) rotate(26deg) scale(0.72);;
+  }
+  20% {
+    transform:  translate(-18px,-15px) rotate(28deg) scale(0.73);;
+  }
+  30% {
+    transform:  translate( 2px,-15px) rotate(27deg) scale(0.72);;
+  }
+  40% {
+    transform:  translate( 20px, 0px) rotate(26deg) scale(0.73);;
+  }
+
+  50% {
+    transform:  translate( 18px, 22px) rotate(25deg) scale(0.71);;
+  }
+
+  60% {
+    transform:  translate( 22px, 22px) rotate(26deg) scale(0.71);;
+  }
+  70% {
+    transform:  translate( 0px, 22px) rotate(27deg) scale(0.71);;
+  }
+  80% {
+    transform: translate( 5px, 0px) rotate(28deg) scale(0.73);;
+  }
+  90% {
+    transform:  translate( 22px, 22px) rotate(29deg) scale(0.72);;
+  }
+  100% {background-position: 15000px;
+    transform:  translate( 0px, 0px)  rotate(30deg) scale(0.7);;
+  }
+}
+
+/* ICONOS DEL MENÚ ARRIBA */
+.programacion{
+  background: url('./assets/img/generales/programacion.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 9%;
+  height: 4%;
+  right: 12%;
+  top: 1%;
+  z-index: 5000;
+  cursor: pointer;
+}
+.tienda_fep{
+  background: url('./assets/img/generales/tiendafep.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 7%;
+  height: 4%;
+  right: 23%;
+  top: 1%;
+  z-index: 5000;
+  cursor: pointer;
+}
+
+/* ICONOS DE FOOTER */
+.logos_footer{
+  background: url('./assets/img/generales/barradelogos.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0%;
+  left: 0;
+}
+
+
+
+@media only screen and (max-width: 1300px){
+
 }
