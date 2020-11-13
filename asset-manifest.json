@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fep/static/css/main.1dc4f331.chunk.css",
-    "main.js": "/fep/static/js/main.b98afc6a.chunk.js",
-    "main.js.map": "/fep/static/js/main.b98afc6a.chunk.js.map",
+    "main.css": "/fep/static/css/main.8641acf2.chunk.css",
+    "main.js": "/fep/static/js/main.873c324f.chunk.js",
+    "main.js.map": "/fep/static/js/main.873c324f.chunk.js.map",
     "runtime-main.js": "/fep/static/js/runtime-main.97a9a2f5.js",
     "runtime-main.js.map": "/fep/static/js/runtime-main.97a9a2f5.js.map",
     "static/js/2.fadac485.chunk.js": "/fep/static/js/2.fadac485.chunk.js",
@@ -10,10 +10,10 @@
     "static/js/3.da212cc8.chunk.js": "/fep/static/js/3.da212cc8.chunk.js",
     "static/js/3.da212cc8.chunk.js.map": "/fep/static/js/3.da212cc8.chunk.js.map",
     "index.html": "/fep/index.html",
-    "static/css/main.1dc4f331.chunk.css.map": "/fep/static/css/main.1dc4f331.chunk.css.map",
+    "static/css/main.8641acf2.chunk.css.map": "/fep/static/css/main.8641acf2.chunk.css.map",
     "static/js/2.fadac485.chunk.js.LICENSE.txt": "/fep/static/js/2.fadac485.chunk.js.LICENSE.txt",
     "static/media/App.css": "/fep/static/media/verde.677a77aa.png",
-    "static/media/barradelogos.5de4217c.png": "/fep/static/media/barradelogos.5de4217c.png",
+    "static/media/barradelogos.a364c6ff.png": "/fep/static/media/barradelogos.a364c6ff.png",
     "static/media/lineupescritorio.f8515ba8.png": "/fep/static/media/lineupescritorio.f8515ba8.png",
     "static/media/lineupmovil.ac1ffad3.png": "/fep/static/media/lineupmovil.ac1ffad3.png",
     "static/media/conteo.css": "/fep/static/media/logofep.fb68a832.png"
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.97a9a2f5.js",
     "static/js/2.fadac485.chunk.js",
-    "static/css/main.1dc4f331.chunk.css",
-    "static/js/main.b98afc6a.chunk.js"
+    "static/css/main.8641acf2.chunk.css",
+    "static/js/main.873c324f.chunk.js"
   ]
 }
