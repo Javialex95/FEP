@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fep/static/css/main.48329ebe.chunk.css",
-    "main.js": "/fep/static/js/main.7953ad03.chunk.js",
-    "main.js.map": "/fep/static/js/main.7953ad03.chunk.js.map",
+    "main.css": "/fep/static/css/main.b3faa6eb.chunk.css",
+    "main.js": "/fep/static/js/main.a29ed8ec.chunk.js",
+    "main.js.map": "/fep/static/js/main.a29ed8ec.chunk.js.map",
     "runtime-main.js": "/fep/static/js/runtime-main.97a9a2f5.js",
     "runtime-main.js.map": "/fep/static/js/runtime-main.97a9a2f5.js.map",
     "static/js/2.dc82ca5d.chunk.js": "/fep/static/js/2.dc82ca5d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.da212cc8.chunk.js": "/fep/static/js/3.da212cc8.chunk.js",
     "static/js/3.da212cc8.chunk.js.map": "/fep/static/js/3.da212cc8.chunk.js.map",
     "index.html": "/fep/index.html",
-    "static/css/main.48329ebe.chunk.css.map": "/fep/static/css/main.48329ebe.chunk.css.map",
+    "static/css/main.b3faa6eb.chunk.css.map": "/fep/static/css/main.b3faa6eb.chunk.css.map",
     "static/js/2.dc82ca5d.chunk.js.LICENSE.txt": "/fep/static/js/2.dc82ca5d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/fep/static/media/verde.677a77aa.png",
     "static/media/barradelogos.85af7845.png": "/fep/static/media/barradelogos.85af7845.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.97a9a2f5.js",
     "static/js/2.dc82ca5d.chunk.js",
-    "static/css/main.48329ebe.chunk.css",
-    "static/js/main.7953ad03.chunk.js"
+    "static/css/main.b3faa6eb.chunk.css",
+    "static/js/main.a29ed8ec.chunk.js"
   ]
 }
